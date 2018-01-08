@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <section>
+        <h1 class="text-center title">Video Youtube Search</h1>
+    </section>
+
+    <section>
+
+        <div class="row text-center">
+            <input type="text" name="" id="search" placeholder="Search" onkeyup="search();">
+            <br>
+        </div>
+
+        <!-- YouTube PlayList pronta -->
+        <div class="row text-center">
+            <iframe id="iframeId" width="560" height="315" frameborder="0" style="display:none;" src="">
+            </iframe>
+        </div>
+
+        <hr>
+
+        <section>
+            <h1 class="text-center title">Video Youtube PlayList</h1>
+        </section>
+
+        <!-- YouTube cirar PlayList -->
+        <div class="row text-center">
+            <iframe width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/?Type=playlist&list=PLsLTTm_L-WT8OJ3I1_ecEDUZpQzTCmvE3">
+            </iframe>
+        </div>
+
+        <hr>
+        <section>
+            <h1 class="text-center title">Video Youtube Personal PlayList</h1>
+        </section>
+
+        <!-- YouTube cirar PlayList -->
+        <div class="row text-center">
+            <iframe width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/Eri7_jDZJcA?listType=playlist&playlist=64klO3KHHBY,eeToT9B8vL8">
+            </iframe>
+        </div>
+
+        <hr>
+
+        <section>
+            <h1 class="text-center title">Video Youtube</h1>
+        </section>
+
+        <!-- YouTube -->
+        <div class="row text-center">
+            <iframe width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/Eri7_jDZJcA?autoplay=0&controls=1&modestbranding=1&showinfo=1">
+            </iframe>
+        </div>
+
+        <hr>
+
+        <section>
+            <h1 class="text-center title">Audio</h1>
+        </section>
+
+        <div class="row text-center">
+            <audio id="audio" width="560" height="350" controls>
+                <source src="media/introcss3.mp4" type=""> Your browser does not support the audio tag.
+            </audio>
+        </div>
+
+        <hr>
+
+        <section>
+                <h1 class="text-center title">Video</h1>
+            </section>
+
+        <div class="row text-center">
+            <video id="video" width="560" height="350" poster="">
+                <source src="media/introcss3.mp4" type="">
+                <source src="media/introcss3.ogg" type="">
+                <source src="media/introcss3.webm" type=""> Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="row text-center">
+            <button type="button" onclick="play()">Play</button>
+            <button type="button" onclick="pause()">Pause</button>
+            <button type="button" onclick="stop()">Stop</button>
+            <button onclick="muted()" id="muted" type="button">Muted</button>
+            <button onclick="full()" id="full" type="button">Fullscreen</button>
+            <input type="range" name="volume" id="volume" class="form-control" min="0" max="100" value="100" onchange="volume()">
+        </div>
+
+        <div class="row">
+            <table id="tableList" class="table"></table>
+        </div>
+
+    </section>
+
+
+    <script src="./js/video.js"></script>
+    <script src="./js/audio.js"></script>
+    <script src="./js/search_youtube.js"></script>
+
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
